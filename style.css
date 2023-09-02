@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    background-image: url("https://wallpapercave.com/wp/wp1927677.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+   
+}
+
+  h1 {
+    text-align: center;
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+  
+
+  }
+
+  .head,
+  .left_arm,
+  .torso,
+  .right_arm,
+  .left_leg,
+  .right_leg {
+    background-color: rgb(58, 168, 67);
+  }
+
+  
+  
+  .head {
+    width: 200px;
+    margin: 100px auto;
+    height: 150px;
+    border-radius: 100px 100px 00px 0px;
+    margin-bottom: 8px;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/05/77/04/14/1000_F_577041412_9A0YnuYIe5oSNSjWMuYwmzjw7vGqXq69.jpg");
+    background-size: 700px;
+    background-position: -250px;
+    background-color: black;
+   
+  }
+  
+  .eyes {
+    position: relative;
+    top: 85px;
+  }
+  
+  .left_eye,
+  .right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(105, 144, 202);
+    display: inline-block;
+  }
+  
+  .left_eye {
+    margin-left: 50px;
+  }
+  
+  .right_eye {
+    margin-left: 50px;
+  }
+  
+  .upper_body {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .left_arm,
+  .right_arm {
+    width: 40px;
+    height: 120px;
+    border-radius: 100px;
+    margin-top: 20px;
+    background-image: url("https://wallpapers.com/images/featured/circuit-board-v9sqijtzusq0u8hc.jpg");
+}
+  .left_arm {
+    margin-right: 10px;
+  }
+  
+  .right_arm {
+    margin-left: 10px;
+  }
+  
+  .torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px 40px 40px 40px;
+    transition: border-radius 1s;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4S3hHB-6cFvGnrIuLEHInZkSGbUdGvYrKutI4bN08UEPavr7Q_2vxdiXsEHAi-X22k8&usqp=CAU");
+    background-size: 200px;
+    background-position: -10px;
+  }
+  
+  .lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .left_leg,
+  .right_leg {
+    width: 40px;
+    height: 180px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+    background-image: url("https://wallpapers.com/images/featured/circuit-board-v9sqijtzusq0u8hc.jpg");
+  }
+  
+  .left_leg {
+    margin-left: 45px;
+  }
+  
+  .right_leg {
+    margin-left: 30px;
+  }
+  
+  .robots:hover .head {
+    animation: movehead 2s infinite;
+  }
+
+  
+  .robots:hover .torso {
+    border-radius: 40%;
+    animation: movetorso 3s infinite;
+  }
+  
+  .robots:hover .left_arm {
+    animation: moveleftarm 4s infinite;
+  }
+  
+  .robots:hover .right_arm {
+    animation: moverightarm 4s infinite;
+  }
+  
+  .robots:hover .left_leg {
+    animation: moveleftleg 2s infinite;
+  }
+  
+  .robots:hover .right_leg {
+    animation: moverightleg 2s infinite;
+
+  }
+  
+  @keyframes movehead {
+    20%{
+      height: 200px;
+      width: 250px;
+    }
+    100%{
+      height: 180px;
+      width: 220px;
+    }
+  }
+  
+  @keyframes moveleftarm {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moverightarm {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moveleftleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(20deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(20deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes moverightleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-20deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-20deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes movetorso {
+    from{
+        transform: rotate(0deg);
+        height: 170px;
+        width: 170px;
+    }
+    to{
+        transform: rotate(360deg);
+        height: 210px;
+        width: 210px;
+    }
+    
+}
